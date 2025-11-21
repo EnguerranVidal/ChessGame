@@ -272,7 +272,8 @@ class Game:
     GAME = "game"
     OPTIONS = "options"
 
-    AVAILABLE_AIS = {"None": None, "Random": RandomEnemy}
+    AVAILABLE_AIS = {"None": None, "Random": RandomEnemy, "Evaluation": EvaluationEnemy, "MiniMax (Depth 2)": lambda color: MiniMaxEnemy(color, depth=2),
+    "MiniMax (Depth 3)": lambda color: MiniMaxEnemy(color, depth=3),}
 
     def __init__(self):
         pygame.init()

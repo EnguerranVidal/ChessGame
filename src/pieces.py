@@ -136,6 +136,7 @@ class Board:
                         return True
         return False
 
+
 class Piece:
     def __init__(self, color, row, col):
         self.color = color
